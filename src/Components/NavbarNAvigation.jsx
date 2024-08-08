@@ -34,7 +34,7 @@ const NavbarNAvigation = () => {
        duration={500} 
        onMouseEnter={()=>{HandleMove(i)}} 
        onMouseLeave={HandleLeave} key={e}
-       className="text-[25px] hover:text-[#27AFE8] hover:font-bold transition-all duration-30">
+       className="text-[25px] cursor-pointer hover:text-[#27AFE8] hover:font-bold transition-all duration-30">
      {e.name}
       {i == Hover && <span className="w-full  h-[2px] bg-[#27AFE8] block"></span>}
      </Link>
