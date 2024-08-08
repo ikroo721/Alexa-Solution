@@ -64,6 +64,26 @@ const AccordianPage = () => {
               </>
             ),
           },
+          {
+            id: 7,
+            heading: "Mobile App Development",
+            content: (
+              <>
+               <p className='text-[18px]'>We craft exceptional mobile applications that are not only visually striking but also uniquely innovative, designed to deliver your brand's message with precision and impact. Our development approach ensures that every app is a perfect blend of functionality and creativity, tailored to provide an engaging and seamless user experience.
+
+</p>
+              </>
+            ),
+          },
+          {
+            id: 8,
+            heading: "Content Writing",
+            content: (
+              <>
+               <p className='text-[18px]'>We produce compelling content that captivates and informs, designed to resonate with your audience and amplify your brand’s message. Our writing is meticulously crafted to be both engaging and impactful, ensuring that your content stands out with creativity and clarity, tailored to meet your specific needs and objectives.</p>
+              </>
+            ),
+          },
       ];
   return (
     <div id="accordian" className='min-h-[10vh] w-full  !z-[99] px-12 flex  mb-[20vw]'>
