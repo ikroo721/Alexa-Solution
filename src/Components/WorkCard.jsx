@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import BgRect from '../assets/Images/Rectangle 6.png'
-const WorkCard = ({img,height,width,contentHeight,contentWidth,padding}) => {
+const WorkCard = ({img,height,width,contentHeight,contentWidth,padding,innerHead,innerText}) => {
 const [Hover, setHover] = useState(false)
 const HandleEnter=()=>{
     setHover(true)
@@ -28,10 +28,8 @@ const HandleLeave=()=>{
      height:contentHeight,
      width:contentWidth,
 }} className={`flex flex-col justify-between text-white`}>
-<h3 className='text-[32px] font-bold  font-roboto'>Kota</h3>
-<p className='text-[18px] font-roboto'>Instant access to insurance and retirement providers, 
-with flexible contributions, automated accounting and a 
-delightfully simple employee app.</p>
+<h3 className='text-[32px] font-bold  font-roboto'>{innerHead}</h3>
+<p className='text-[18px] font-roboto'>{innerText}</p>
 </div>
 </div> 
    }

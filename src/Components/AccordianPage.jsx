@@ -9,7 +9,7 @@ const AccordianPage = () => {
       setActiveIndex(prevIndex => (prevIndex === index ? index : index));
     };
     const accordionItems = [
-        {
+          {
           id: 1,
           heading: "Web Development",
           content: (
@@ -18,8 +18,8 @@ const AccordianPage = () => {
              tailored to meet your business needs.</p>
             </>
           ),
-        },
-        {
+          },
+          {
             id: 2,
             heading: "E-commerce",
             content: (
@@ -66,21 +66,20 @@ const AccordianPage = () => {
           },
           {
             id: 7,
-            heading: "Mobile App Development",
+            heading: "App Development",
             content: (
               <>
                <p className='text-[18px]'>We craft exceptional mobile applications that are not only visually striking but also uniquely innovative, designed to deliver your brand's message with precision and impact. Our development approach ensures that every app is a perfect blend of functionality and creativity, tailored to provide an engaging and seamless user experience.
-
-</p>
+               </p>
               </>
             ),
           },
           {
             id: 8,
-            heading: "Content Writing",
+            heading: "Lead Generation",
             content: (
               <>
-               <p className='text-[18px]'>We produce compelling content that captivates and informs, designed to resonate with your audience and amplify your brand’s message. Our writing is meticulously crafted to be both engaging and impactful, ensuring that your content stands out with creativity and clarity, tailored to meet your specific needs and objectives.</p>
+               <p className='text-[18px]'>we specialize in generating high-quality leads that drive business growth. Our approach combines strategic insights with innovative techniques to attract and engage your ideal customers. From crafting compelling campaigns to leveraging data-driven insights, we ensure every step of the lead generation process is optimized for maximum impact. Whether you're looking to boost your sales pipeline or expand your market reach, our tailored solutions are designed to deliver qualified leads that convert. Partner with us to turn prospects into loyal customers and achieve your business goals.</p>
               </>
             ),
           },

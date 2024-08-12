@@ -1,14 +1,25 @@
 /* eslint-disable no-irregular-whitespace */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Star from '../assets/Images/ph_star-fill.png'
 import Comma from '../assets/Images/comma.png'
 import Comma2 from "../assets/Images/Comma2.png"
-const ReviewCard = ({bg,text,circle,rotate,index}) => {
+const ReviewCard = ({bg,text,circle,rotate,index,Animate}) => {
+  const [First, setfirst] = useState("")
+  // if(Animate == "Normal"){
+    // alert("ell")
+    console.log(Animate)
+useEffect(() => {
+  Animate == "Normal" ? setfirst("0deg") : setfirst(rotate)
+
+}, [Animate, rotate])
+
+  // }
+// Animate =="Normal" ?" !rotate-[0deg]"
   return (
-    <div style={{backgroundColor:bg,rotate:rotate,color:text}} className={`h-[430px] w-[430px]  rouned-[25px] ${index == 1 && "-ml-5"} ${index == 2 && "-ml-1"}  
-    flex items-center justify-center rounded-[25px] `}>
+    <div style={{backgroundColor:bg,rotate:First ,color:text}} className={`transition-all duration-700 ease-in-out h-[430px] w-[430px]  rouned-[25px] ${index == 1 && "-ml-5"} ${index == 2 && "-ml-1"}  
+    flex items-center justify-center rounded-[25px]  `}>
             <div className='flex flex-col justify-end items-end'>
             <div className='w-[380px] h-[327px]  '>
                 <div className='w-full h-[327px] flex flex-col gap-2'>

@@ -27,9 +27,11 @@ const NavbarNAvigation = () => {
     }
   return (
     <div className="w-[80%]  h-full flex items-center justify-center">
-    <div className="w-[75%]  flex  justify-between">
+    <div className="w-[75%]  flex  justify-between ">
      {NAvData.map((e,i)=>(
-       <Link to={e.section}  
+     <div key={i} className='flex w-full'>
+        <div  className=' px-2  h-10 ' >
+        <Link to={e.section}  
        smooth={true}
        duration={500} 
        onMouseEnter={()=>{HandleMove(i)}} 
@@ -38,7 +40,10 @@ const NavbarNAvigation = () => {
      {e.name}
       {i == Hover && <span className="w-full  h-[2px] bg-[#27AFE8] block"></span>}
      </Link>
+       </div>
+     </div>
      ))}
+     
     </div>
   </div>
   )
