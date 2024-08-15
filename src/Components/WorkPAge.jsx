@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { memo,} from 'react'
 import Rect1 from '../assets/Images/RECT1.png'
 import Rect2 from '../assets/Images/3 1.png'
 import Rect3 from '../assets/Images/Rect4.png'
@@ -90,4 +90,4 @@ const WorkPAge = () => {
   )
 }
 
-export default WorkPAge
+export default memo(WorkPAge)

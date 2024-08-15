@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { memo } from 'react'
 import FooterTop from './FooterTop'
 import FooterBottom from './FooterBottom'
 const Footer = () => {
@@ -12,4 +12,5 @@ const Footer = () => {
   )
 }
 
-export default Footer
+
+export default memo(Footer)

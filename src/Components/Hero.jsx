@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { memo } from 'react'
 import Navbar from './Navbar'
 import BG from '../assets/Images/pikaso_embed 1.png'
 import HeroCenterText from './HeroCenterText'
@@ -17,4 +17,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default memo(Hero)

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-irregular-whitespace */
-import React, { useState } from 'react'
+import React, { memo, useState } from 'react'
 import ReviewCard from './ReviewCard'
 
 const PeopleSay = () => {
@@ -49,4 +49,4 @@ const PeopleSay = () => {
   )
 }
 
-export default PeopleSay
+export default memo(PeopleSay)

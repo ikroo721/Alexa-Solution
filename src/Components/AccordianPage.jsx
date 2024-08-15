@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from 'react'
+import React, { memo, useMemo, useState } from 'react'
 import AccordianButton from './AccordianButton';
 import AccordianContent from './AccordianContent';
 import { motion } from 'framer-motion';
@@ -112,4 +112,4 @@ to meet unique needs, driving success through our diverse
   )
 }
 
-export default AccordianPage
+export default memo(AccordianPage)

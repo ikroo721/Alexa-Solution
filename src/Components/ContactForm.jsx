@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { memo } from 'react'
 import ContactFormData from './ContactFormData'
 import ContactMapSection from './ContactMapSection'
 const ContactForm = () => { 
@@ -13,4 +13,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm
+export default memo(ContactForm)
