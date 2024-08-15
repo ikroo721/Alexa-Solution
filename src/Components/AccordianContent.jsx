@@ -4,7 +4,7 @@ import React from 'react'
 
 const AccordianContent = ({id,activeIndex,content}) => {
   return (
-    <div id={`accordion-collapse-body-${id}`} className={`w-[558px] 
+    <div id={`accordion-collapse-body-${id}`} className={`w-full xl:w-[558px] 
         ${activeIndex === id ? 'block' : 'hidden'}`} aria-labelledby={`accordion-collapse-heading-${id}`} >
         {content}
      </div>

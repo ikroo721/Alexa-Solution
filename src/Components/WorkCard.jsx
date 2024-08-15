@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import BgRect from '../assets/Images/Rectangle 6.png'
+import { easeInOut, motion } from 'framer-motion'
 const WorkCard = ({img,height,width,contentHeight,contentWidth,padding,innerHead,innerText}) => {
 const [Hover, setHover] = useState(false)
 const HandleEnter=()=>{
@@ -11,19 +12,24 @@ const HandleLeave=()=>{
     setHover(false)
 }
   return (
-    <div onMouseEnter={HandleEnter} onMouseLeave={HandleLeave} style={{
-               height:height,
-               width:width,
+    <motion.div
+    
+    initial={{scale:0,opacity:0}}
+    whileInView={{scale:1,opacity:1}}
+    transition={{duration:.5, ease:'linear'}}
+    onMouseEnter={HandleEnter} onMouseLeave={HandleLeave} style={{
+              //  height:height,
+              //  width:width,
                background:`url(${img})`,
                backgroundSize:"cover",backgroundPosition:"center"}}
- className={`rounded-[20px] overflow-hidden`}>
+ className={`rounded-[20px] h-full w-full  overflow-hidden w-[${width}] h-[${height}] `}>
    {
     Hover &&  <div 
     style={{
     padding:padding,
     background:`url(${BgRect})`,
     backgroundSize:"cover",backgroundPosition:"center"}}
-    className={`h-full w-full bg-[url('${BgRect}')] flex items-end`}>
+    className={`h-full w-full  bg-[url('${BgRect}')] flex items-end`}>
 <div style={{
      height:contentHeight,
      width:contentWidth,
@@ -34,7 +40,7 @@ const HandleLeave=()=>{
 </div> 
    }
 
-</div>
+</motion.div>
   )
 }
 

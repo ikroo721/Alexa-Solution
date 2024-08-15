@@ -5,7 +5,7 @@ import Email from '../assets/Images/Email.png'
 import Map from '../assets/Images/image 5.png'
 const ContactMapSection = () => {
   return (
-    <div className='w-[600px] h-[702px]  flex flex-col justify-between pt-16'>
+    <div className='w-[250px] xsm:w-[400px] lg:w-[600px] slg:w-[600px]  sxl:w-[600px] xl:w-[600px] h-[702px]  flex flex-col justify-between pt-16'>
             <h4 className='text-[22px] font-roboto'>Lorem ipsum dolor sit amet, consectetur<br /> 
             adipiscing elit. </h4>
             <div className='flex flex-col gap-4'>
@@ -28,7 +28,7 @@ const ContactMapSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[522px] h-[350px] rounded-[20px] overflow-hidden'>
+            <div className='w-[250px] xsm:w-[400px] xl:w-[522px] h-[350px] rounded-[20px] overflow-hidden'>
                  <img src={Map} alt="" />
             </div>
         </div>

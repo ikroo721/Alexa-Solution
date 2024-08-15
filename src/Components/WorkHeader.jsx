@@ -8,8 +8,8 @@ const WorkHeader = () => {
             <h3 className='text-[74px] font-anton'>Our work Experience</h3>
         </div>
         <div className='flex items-center justify-center 
-         text-white '>
-            <div className='w-[1350px]  h-[41px]  flex gap-[12px]'>
+         text-white  '>
+            <div className='xl:w-[1350px]  xl:px-0 w-full px-5  min-h-[41px] xl:flex-nowrap justify-center flex-wrap flex gap-[12px]'>
                 {ButtonsData.map((e)=>(
                     <button key={e} className='px-[25px] py-[10px] text-[18px] font-roboto text-nowrap hover:border-[#27AFE8] hover:text-[#27AFE8] border-[1px] rounded-full flex items-center justify-center'>{e}</button>
                 ))}

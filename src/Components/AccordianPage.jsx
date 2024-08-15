@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import AccordianButton from './AccordianButton';
 import AccordianContent from './AccordianContent';
+import { motion } from 'framer-motion';
+import { easeInOut } from 'framer-motion/dom';
 const AccordianPage = () => {
     const [activeIndex, setActiveIndex] = useState(1);
     const toggleAccordion = (index) => {
@@ -85,20 +87,25 @@ const AccordianPage = () => {
           },
       ];
   return (
-    <div id="accordian" className='min-h-[10vh] w-full  !z-[99] px-12 flex  mb-[20vw]'>
-        <div className='w-1/2 text-white !z-[99] flex flex-col gap-6  pt-[10vw]'>
-        <h2 className='text-[74px] font-anton !z-[99]'>Expertise we Offer</h2>
-        <p className='w-[500px] text-[20px] font-roboto !z-[99]'>Alexa IT Solution’s dedicated team empowers 
+    <div id="accordian" className='min-h-[10vh] w-full   !z-[99] px-12 flex slg:flex-col lmd:flex-col md:flex-col sm:flex-col xsm:flex-col flex-col lg:flex-col xl:flex-row  mb-[20vw]'>
+        <div className='lg:w-full xl:w-1/2 text-white !z-[99] flex xl:items-start xl:justify-start items-center justify-center flex-col gap-6  pt-[10vw]'>
+        <h2 className='lmd:text-[74px] md:text-[74px] xl:text-[74px] lg:text-[74px] slg:text-[74px] text-[35px] xsm:text-[50px] sm:text-[70px] font-anton !z-[99]'>Expertise we Offer</h2>
+        <p className='lg:w-[500px] xsm:w-[400px] sm:w-[500px] md:w-[550px] lmd:w-[550px] slg:w-[550px] xl:w-[500px] text-[20px] font-roboto !z-[99]'>Alexa IT Solution’s dedicated team empowers 
 businesses with innovative technology solutions tailored 
 to meet unique needs, driving success through our diverse
  expertise and comprehensive services.</p>
         </div>
-        <div id="accordion-collapse" className='w-1/2 pt-[18vw]  z-[99] flex items-center justify-center flex-col gap-5 '>
+        <div id="accordion-collapse" className='xl:w-1/2  pt-[18vw]  z-[99] flex items-center justify-center flex-col gap-5 '>
         {accordionItems.map(({ id, heading, content })=>(
-            <div key={id} className='min-h-[89px] w-[655px] bg-[#262626] rounded-[20px] flex justify-center flex-col gap-2 px-8 py-5 text-white border-[#27AFE8] border-[1px] border-opacity-30 !transition-all !duration-200 '>
+       <div  key={id} className='overflow-hidden'>
+             <motion.div
+             whileHover={{backgroundColor:"black"}}
+             transition={{duration:2,ease:easeInOut}}
+            className='min-h-[89px] w-[300px] xsm:w-[470px] sm:w-[600px] md:w-[700px] lmd:w-[750px] slg:w-[800px] lg:w-[800px] xl:w-[655px] bg-[#262626] rounded-[20px] flex justify-center flex-col gap-2 px-8 py-5 text-white border-[#27AFE8] border-[1px] border-opacity-30 !transition-all !duration-200 '>
             <AccordianButton id={id} toggleAccordion={toggleAccordion} heading={heading}  activeIndex={activeIndex} />
             <AccordianContent  id={id} activeIndex={activeIndex} content={content} />
-           </div>
+           </motion.div>
+       </div>
         ))}
         </div>
     </div>

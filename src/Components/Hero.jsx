@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div style={{ backgroundImage: `url(${BG})` }}
      className={`h-screen w-full  bg-[#262626]   relative`} >
-    <div className='px-12 pt-3 z-0 '>
+   <div className='lg:px-12 slg:px-12 xlg:px-12 md:px-12 sm:px-5 xsm:px-2 px-2 pt-3 z-0 '>
              <Navbar/>
     </div>
         <HeroCenterText/>
