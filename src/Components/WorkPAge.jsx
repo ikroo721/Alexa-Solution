@@ -62,7 +62,7 @@ const WorkPAge = () => {
 <div className=' w-full   px-12 flex items-center justify-center '>
 <div className='xl:w-[1350px] w-full xl:px-0 px-5   flex  slg:flex-wrap slg:justify-center  flex-wrap sxl:flex-wrap lg:flex-wrap md::flex-wrap lmd::flex-wrap sm:flex-wrap xsm::flex-wrap slg::flex-wrap items-center justify-center xl:flex-nowrap gap-5  sxl:gap-2 xl:gap-10 relative'>
 {CardData.map((e,i)=>(
-   <a key={e} href={e.LinkToWeb}>
+   <a key={i} href={e.LinkToWeb}>
     <div className={`${i==0 ? "xl:h-[647px] xl:w-[545px]": "xl:h-[646px] xl:w-[315px] "} 
     sxl:w-[40vw] lmd:w-[60vw] w-[70vw] h-[350px] lmd:h-[450px] xsm:w-[60vw] xsm:h-[400px] sm:w-[60vw] sm:h-[400px] md:w-[60vw] md:h-[450px] lg:w-[60vw] lg:h-[500px] sxl:h-[500px]`}>
     <WorkCard key={e.img} padding={e.padding} img={e.img} 
@@ -72,10 +72,10 @@ const WorkPAge = () => {
    </a>
 ))}
 <div className='flex flex-col xl:flex-col sxl:flex-row sxl:gap-2 xl:gap-0 justify-between gap-5 min-h-[647px]'>
-{CardData2.map((e)=>(
-   <a key={e} href={e.LinkToWeb}>
+{CardData2.map((e,i)=>(
+   <a key={i} href={e.LinkToWeb}>
     <div className={`xl:w-[430px] xl:h-[312.5px] sxl:w-[40vw] lmd:w-[60vw] w-[70vw] h-[350px] lmd:h-[450px] xsm:w-[60vw] xsm:h-[400px] sm:w-[60vw] sm:h-[400px] md:w-[60vw] md:h-[450px] lg:w-[60vw] lg:h-[500px] sxl:h-[500px] `}>
-    <WorkCard key={e.img} padding={e.padding} img={e.img} 
+    <WorkCard key={e.img} padding={e.padding} img={e.img}
     contentHeight={e.contentHeight} contentWidth={e.contentWidth} innerHead={e.innerHead} innerText={e.innerText}
     />
     </div>

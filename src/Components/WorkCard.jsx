@@ -16,11 +16,11 @@ const HandleLeave=()=>{
     
     initial={{scale:0,opacity:0}}
     whileInView={{scale:1,opacity:1}}
-    transition={{duration:1, ease:'easeInOut'}}
+    transition={{duration:.5, ease:'linear'}}
     onMouseEnter={HandleEnter} onMouseLeave={HandleLeave} style={{
                background:`url(${img})`,
                backgroundSize:"cover",backgroundPosition:"center"}}
- className={`rounded-[20px] h-full w-full  overflow-hidden w-[${width}] h-[${height}] `}>
+ className={`rounded-[20px] h-full w-full  overflow-hidden `}>
    {
     Hover &&  <div 
     style={{
