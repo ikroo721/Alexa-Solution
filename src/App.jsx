@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FullApp from './Components/FullApp';
 import Loader from './Components/Loader';
+import Lenis from '@studio-freight/lenis/types';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -10,8 +11,14 @@ const App = () => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000); // 3 seconds
+    // const lenis = new Lenis()
+    // lenis.start()
+    // lenis.start();
 
-    return () => clearTimeout(timer); // Cleanup timer on component unmount
+    return () => {
+      // lenis.destroy();
+      clearTimeout(timer);
+    }; 
   }, []);
 
   return (

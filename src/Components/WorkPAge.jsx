@@ -65,7 +65,7 @@ const WorkPAge = () => {
    <a key={e} href={e.LinkToWeb}>
     <div className={`${i==0 ? "xl:h-[647px] xl:w-[545px]": "xl:h-[646px] xl:w-[315px] "} 
     sxl:w-[40vw] lmd:w-[60vw] w-[70vw] h-[350px] lmd:h-[450px] xsm:w-[60vw] xsm:h-[400px] sm:w-[60vw] sm:h-[400px] md:w-[60vw] md:h-[450px] lg:w-[60vw] lg:h-[500px] sxl:h-[500px]`}>
-    <WorkCard key={e.img} padding={e.padding} img={e.img} height={e.height} width={e.width} 
+    <WorkCard key={e.img} padding={e.padding} img={e.img} 
     contentHeight={e.contentHeight} contentWidth={e.contentWidth} innerHead={e.innerHead} innerText={e.innerText}
     />
     </div>
@@ -75,7 +75,7 @@ const WorkPAge = () => {
 {CardData2.map((e)=>(
    <a key={e} href={e.LinkToWeb}>
     <div className={`xl:w-[430px] xl:h-[312.5px] sxl:w-[40vw] lmd:w-[60vw] w-[70vw] h-[350px] lmd:h-[450px] xsm:w-[60vw] xsm:h-[400px] sm:w-[60vw] sm:h-[400px] md:w-[60vw] md:h-[450px] lg:w-[60vw] lg:h-[500px] sxl:h-[500px] `}>
-    <WorkCard key={e.img} padding={e.padding} img={e.img} height={e.height} width={e.width} 
+    <WorkCard key={e.img} padding={e.padding} img={e.img} 
     contentHeight={e.contentHeight} contentWidth={e.contentWidth} innerHead={e.innerHead} innerText={e.innerText}
     />
     </div>

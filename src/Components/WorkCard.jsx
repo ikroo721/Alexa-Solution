@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import BgRect from '../assets/Images/Rectangle 6.png'
 import { easeInOut, motion } from 'framer-motion'
-const WorkCard = ({img,height,width,contentHeight,contentWidth,padding,innerHead,innerText}) => {
+const WorkCard = ({img,contentHeight,contentWidth,padding,innerHead,innerText}) => {
 const [Hover, setHover] = useState(false)
 const HandleEnter=()=>{
     setHover(true)
@@ -16,10 +16,8 @@ const HandleLeave=()=>{
     
     initial={{scale:0,opacity:0}}
     whileInView={{scale:1,opacity:1}}
-    transition={{duration:.5, ease:'linear'}}
+    transition={{duration:1, ease:'easeInOut'}}
     onMouseEnter={HandleEnter} onMouseLeave={HandleLeave} style={{
-              //  height:height,
-              //  width:width,
                background:`url(${img})`,
                backgroundSize:"cover",backgroundPosition:"center"}}
  className={`rounded-[20px] h-full w-full  overflow-hidden w-[${width}] h-[${height}] `}>
