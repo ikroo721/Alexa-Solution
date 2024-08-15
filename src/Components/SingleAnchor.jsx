@@ -15,13 +15,14 @@ const SingleAnchor = ({e,i}) => {
     }
     return (
     <div  className=' hidden  lmd:flex slg:flex xl:flex md:flex  lg:flex'>
-        <div  className='  min-h-10  flex items-center' >
-        <Link to={e.section}  
+        <div  className='  min-w-32  lmd:min-w-32 slg:min-w-40   min-h-10  flex items-center justify-center'  >
+       <div className=''>
+       <Link to={e.section}  
        smooth={true}
        duration={500} 
        onMouseEnter={()=>{HandleMove(i)}} 
        onMouseLeave={HandleLeave}
-       className="xlg:text-[25px] lmd:text-[19px] sm:text-[16px] md:text-[19px] slg:text-[19px] lg:text-[20px] cursor-pointer text-nowrap">
+       className="xlg:text-[25px] lmd:text-[15px]  md:text-[15px] slg:text-[17px] lg:text-[19px] cursor-pointer text-nowrap">
      <motion.span
      initial={{color:"white"}}
      whileHover={{color:"#27AFE8",fontWeight:"800"}}
@@ -33,6 +34,7 @@ const SingleAnchor = ({e,i}) => {
       transition={{duration:.6}}
       className="w-full  h-[2px] bg-[#27AFE8] block"></motion.span>}
         </Link>
+       </div>
        </div>
      </div>
   )

@@ -21,7 +21,7 @@ const NavbarNAvigation = () => {
     ]
   return (
     <div className="w-[80%]  h-full flex items-center justify-center ">
-    <div className="lg:w-[80%] lmd:w-[85%] md:w-[85%] slg:w-[80%] xl:w-[75%]  flex  justify-between ">
+    <div className="     lg:w-[85%] lmd:w-[100%] md:w-[95%] slg:w-[100%] xl:w-[80%]  flex  justify-between ">
      {NAvData.map((e,i)=>(
       <SingleAnchor key={i} i={i} e={e} />
      ))}

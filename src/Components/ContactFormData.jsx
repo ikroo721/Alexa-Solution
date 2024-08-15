@@ -16,6 +16,8 @@ const ContactFormData = () => {
         <input type="email" placeholder='Email' className='rounded-[10px] px-[23px] py-[27px]
          xl:w-[638px] sxl:w-[600px] h-[77px] w-full font-roboto text-[20px]' />
         <input type="text" placeholder='Any additional information' className='rounded-[10px] px-[23px] py-[27px] xl:w-[638px] sxl:w-[600px] w-full h-[196px]  placeholder:absolute placeholder:top-5 font-roboto text-[20px]' />
+        <button   className='rounded-[10px] px-[23px] py-[27px] flex items-center justify-center font-bold text-2xl uppercase
+         xl:w-[638px] sxl:w-[600px] h-[45px] w-full font-roboto text-[20px] bg-white hover:bg-[#262626] hover:text-white hover:border hover:border-white text-[#262626]' >Submit</button>
     </form>
 </div>
   )
