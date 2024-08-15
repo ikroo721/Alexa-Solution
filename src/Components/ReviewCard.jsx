@@ -15,7 +15,7 @@ useEffect(() => {
   return (
     <div
     style={{backgroundColor:bg ,color:text,'--rotation': `${First}`}} className={`transition-all duration-700 ease-in-out h-[330px] w-[330px] sm:h-[450px] sm:w-[450px]  xsm:h-[430px] xsm:w-[430px] lmd:h-[450px] lmd:w-[450px] md:h-[450px] md:w-[450px] slg:h-[280px] slg:w-[230px] lg:h-[300px] lg:w-[300px] sxl:h-[400px] sxl:w-[400px] xl:h-[430px] xl:w-[430px]  
-       ${index == 1 && "-ml-5"} ${index == 2 && "-ml-1"}  
+       ${index == 1 && "sxl:-ml-5 lg:-ml-5 slg:-ml-5  xl:-ml-5"} ${index == 2 && "xl:-ml-1 sxl:-ml-1 lg:-ml-1 slg:-ml-1"}  
     flex items-center justify-center rounded-[25px] lg:rounded-[25px] md:rounded-[25px] sm:rounded-[25px] lmd:rounded-[25px] xl:rounded-[25px] sxl:rounded-[25px] xsm:rounded-[25px] slg:rounded-[20px] rotate-0 sm:rotate-0 xsm:rotate-0 md:rotate-0 lmd:rotate-0 
     lg:rotate-[var(--rotation)] slg:rotate-[var(--rotation)] xl:rotate-[var(--rotation)] sxl:rotate-[var(--rotation)]`}>
             <div className='flex flex-col justify-center items-center  xl:justify-end xl:items-end'>
